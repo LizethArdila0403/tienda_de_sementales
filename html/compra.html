@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--diseño de pagina realizada por Lizeth juliana ardila villamizar-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Compra</title>
+    <meta name="description" content="Página de compra de la tienda de sementales"/>
+    <meta name="author" content="Juliana villamizar" />
+    <meta name="keywords" content="tienda sementales, perfumes, feminidad, bomb sheel, angel god, tease victoria">
+    <!-- imagenes tomadas de : https://instagram.com/victoriassecretcolombia?igshid=YmMyMTA2M2Y= -->
+  </head>
+  <body>
+
+    <!-- Barra de Navegación con links a las otras páginas -->
+    <nav class="contenedor">
+      <a href="../index.html" class="texto">Home</a>
+      <a href="catalogo.html" class="texto">Catalogo</a>
+      <a href="blog.html" class="texto">Blog</a>
+      <a href="informacion.html" class="texto">Información</a>
+      <a href="compra.html" class="texto">Compra</a>
+      <a href="contacto.html" class="texto">Contacto</a>
+    </nav>
+
+    <!-- cabecera de la página -->
+    <header class="cabecera">
+      <h2 class="texto">Página de Compra</h2>
+      <p class="texto">
+        selecciona la cantidad de productos, ingresa tus datos de contacto y dale en el boton comprar
+      </p>
+    </header>
+
+    <!--area de contenido-->
+    <section class="contenedor">
+      <!-- formulario de contacto -->
+      <form>
+        <div>
+          <label>Tipo de producto</label>
+          <select>
+            <option>Perfume Bomb Shell</option>
+            <option>Perfume Angel God</option>
+            <option>Perfume Tease Victoria</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Cantidad</label>
+          <select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+        </div>
+
+        <input type="email" id="email" name="email" placeholder="email confirmacion" value="">
+        <input type="text" id="direccion" name="direccion" placeholder="direccion de envio" value="">
+      </form>
+      <!-- boton de compra -->
+      <button onclick="alert('comprado')" type="button" name="button">Comprar</button>
+    </section>
+
+  </body>
+</html>
