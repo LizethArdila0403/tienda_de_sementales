@@ -1,0 +1,78 @@
+/* CODIGO CSS DE LA PAGINA DE LANDING */
+
+/* CABECERA EN FORMATO DE COLUMNA */
+.header{
+	display: flex;	
+	margin-top:60px;
+	padding-bottom: 60px;
+}
+/* IMAGENES DE LA CABECERA CON EFECTO SOBREPUESTO */
+.header-imagenes{
+	position: relative;
+	max-width:588px;
+	min-width:420px;
+	width: 44%;
+}
+/* TODO EL ANCHO DE LA CABECERA */
+.header img{
+	width: 100%;
+}
+/* EFECTO BORROSO */
+.header img.blur-img{
+	filter: blur(3px);
+}
+/* IMAGEN SOBREPUESTA */
+img.img-sobrepuesta{
+	position: absolute;
+	width: 80%;
+	top:10%;
+	left:10%;
+	max-width:488px;
+	min-width:320px;	
+}
+
+/* TEXTO QUE ACOMPAÑA LA IMAGEN DE LA CABECERA */
+.header-texto-derecha{
+	width:56%;
+	padding: 80px 10px 0px 90px;	
+}
+
+/* TITULO DE LA CABECERA */
+.header-titulo-1{
+	font-size:48px;
+	font-weight: 400;
+	text-align: center;
+	text-shadow: 0 0 6px #00000040;
+}
+/* PARRAFO DE LA CABECERA */
+.header-parrafo-1{
+	font-size:40px;
+	font-weight: 400;
+	text-align: center;
+	text-shadow: 0 0 6px #00000040;
+	margin-bottom: 40px;
+}
+
+/* BOTON DE LA CABECERA */
+.header-boton{
+	margin: 0 auto;
+	text-align: center;	
+}
+/* FUENTE DEL BOTON DE LA CABECERA */
+.header-boton a{
+	font-size:30px;
+}
+
+/* TAMAÑO DE PANTALLA PEQUEÑO REACOMODAR LAS COSAS */
+@media (max-width: 1245px){
+	.header-texto-derecha{
+		padding: 20px 10px 0px 30px;
+	}
+}
+@media (max-width: 1000px){
+	.header{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}

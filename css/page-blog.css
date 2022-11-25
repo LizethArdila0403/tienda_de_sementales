@@ -1,0 +1,55 @@
+/* CODIGO CSS DE LA PAGINA DE BLOG */
+
+/* CABECERA EN FORMATO DE COLUMNA */
+.header{
+	display: flex;	
+	margin-top:60px;
+	margin-bottom: 60px;	
+}
+
+/* ARTICULO DEL BLOG */
+.header-articulo{
+	width: 50%;
+	text-align: center;
+}
+/* IMAGEN DE PORTADA DEL ARTICULO DEL BLOG */
+.header-articulo img{
+	width: 75%;
+	margin:0 auto;
+}
+/* TITULO DE LA CABECERA */
+.header-titulo{
+	text-align: center;
+	font-size:36px;
+	font-weight: 400;
+	text-shadow: 0 0 6px #00000040;
+	font-family: 'Merriweather', serif;
+}
+/* PARRAFO DE LA CABECERA */
+.header-parrafo{	
+	text-align: center;
+	font-size:28px;
+	font-weight: 400;
+	text-shadow: 0 0 6px #00000040;	
+	font-family: 'Dosis', sans-serif;
+}
+
+/* FORMULARIO DE COMENTARIO */
+form{
+	text-align: right;
+	margin-bottom: 60px;
+	padding: 20px;
+}
+/* TEXTO DEL FORMULARIO */
+form label{
+	font-size:28px;
+	font-weight: 400;
+	text-shadow: 0 0 6px #00000040;	
+	font-family: 'Merriweather', serif;
+}
+/* CAMPO DE ESCRITURA DEL FORMULARIO */
+form input{
+	min-width: 500px;
+	height: 32px;
+	padding: 0;
+}

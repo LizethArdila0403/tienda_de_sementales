@@ -8,48 +8,53 @@
     <meta name="author" content="Juliana villamizar" />
     <meta name="author" content="Juliana villamizar" />
     <!-- imagenes tomadas de : https://instagram.com/victoriassecretcolombia?igshid=YmMyMTA2M2Y= -->
+
+    <!-- LINKS DEL CSS Y FUENTES -->
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../css/page-informacion.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">         
   </head>
   <body>
 
     <!-- Barra de Navegación con links a las otras páginas -->
-    <nav class="contenedor">
-      <a href="../index.html" class="texto">Home</a>
-      <a href="catalogo.html" class="texto">Catalogo</a>
-      <a href="blog.html" class="texto">Blog</a>
-      <a href="informacion.html" class="texto">Información</a>
-      <a href="compra.html" class="texto">Compra</a>
-      <a href="contacto.html" class="texto">Contacto</a>
-    </nav>
+    <nav class="barra-navegacion background-rosa">
+      <!-- Iconos redes sociales-->
+      <div class="nav-links-izquierda">
+        <a href="https://m.facebook.com/"><img src="../img/red-social-1.png" alt="icono whatsapp"></a>
+        <a href="https://www.instagram.com"><img src="../img/red-social-2.png" alt="icono whatsapp"></a>
+        <a href="https://www.whatsapp.com/"><img src="../img/red-social-3.png" alt="icono whatsapp"></a>
+      </div>
+
+      <!-- Links de navegación -->
+      <div class="nav-links-derecha">
+        <a href="../index.html">Home.</a>
+        <a href="catalogo.html">Catalogo.</a>
+        <a href="blog.html">Blog.</a>
+        <a href="informacion.html" class="nav-link-activo">Información.</a>
+        <a href="compra.html">Compra.</a>
+        <a href="contacto.html">Contacto.</a>
+      </div>
+    </nav>    
+
 
     <!-- cabecera de la página -->
-    <header class="cabecera">
-      <h2 class="texto">Página de Información</h2>
-      <p class="texto">
-        Conoce mas sobre nosotros, historia, misión, visión
-      </p>
-    </header>
-
-    <!--area de contenido-->
-    <section class="contenedor">
-
-      <!-- Historia de la empresa en formato Titulo + parrafo -->
-      <h3 class="texto">Historia</h3>
-      <p class="texto">
-        Tenemos 5 años de experiencia en el sector, empezamos con poco pero ahora tenemos un mejor catalogo y servicio
+    <header class="contenedor header">
+      <!-- Quienes Somos de la empresa -->
+      <h3 class="header-titulo">¿Quienes Somos?</h3>
+      <p class="header-parrafo">
+        Somos un emprendimiento Colombiano, en el cual ofrecemos perfumes para mujeres, niñas y adolecentes. Permitiendo que nuestros usuarios se identifiquen con la marca y puedan encontrar en su interior lo más lindo de su ser y su personalidad, reflejando elegancia, frescura y armonia; por medio de una fragancia exclusiva.
       </p>
 
       <!-- Misión de la empresa en formato Titulo + parrafo -->
-      <h3 class="texto">Misión</h3>
-      <p class="texto">
-        crear un producto propio que captura el olor de la salud
+      <h3 class="header-titulo">Misión</h3>
+      <p class="header-parrafo">
+        Causar en nuestros usuarios seguridad, sensacion de confianza, armonia y encanto. A traves de nuestros productos los cuales son adsequibles para cualquier persona en Colombia, sin importar un estrato social o estigma. 
       </p>
-
-      <!-- Visión de la empresa en formato Titulo + parrafo -->
-      <h3 class="texto">Visión</h3>
-      <p class="text">
-        ser el lider de perfumes en cundinamarca
-      </p>
-    </section>
+    </header>
 
   </body>
 </html>

@@ -1,0 +1,61 @@
+/* CODIGO CSS DE LA BARRA DE NAVEGACIÓN */
+
+/* ALIENACION HORIZONTAL Y ESPACIADO */
+nav, .barra-navegacion{
+	display: flex;
+	border-radius: 35px;	
+	margin:14px 8px;
+	padding: 10px 18px;
+}
+
+/* FUENTE DE LOS LINKS */
+nav a{
+	font-size:21px;
+	font-family: 'Merriweather', serif;
+}
+
+/* ALIENACION HORIZONTAL DE LOS LINKS Y ESPACIADO*/
+.nav-links-derecha{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: auto;
+	gap:16px;
+}
+
+/* COLOR DE LOS LINKS A NEGRO */
+.nav-links-derecha a{
+	color:black;
+}
+
+/* ALINEACION HORIZONTAL BOTONES DE REDES SOCIALES */
+.nav-links-izquierda{
+	display: flex;
+	gap:32px;
+}
+
+/* TAMAÑO DE LOS ICONOS DE REDES SOCIALES*/
+.nav-links-izquierda img{
+	width: 38px;
+	height: 38px;
+}
+
+/* LINK ACTIVO PONER UN SUBRAYADO */
+a.nav-link-activo{
+	text-decoration: underline;
+}
+
+/* TAMAÑO DE PANTALLA PEQUEÑO REACOMODAR LAS COSAS */
+@media (max-width: 900px){
+	nav, .barra-navegacion, .nav-links-derecha{
+		flex-direction: column;
+	}
+	.nav-links-izquierda{
+		justify-content: center;
+		align-items: center;	
+		padding-bottom: 5px;	
+	}
+	.nav-links-derecha{
+		margin-left:0;
+	}
+}

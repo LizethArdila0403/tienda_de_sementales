@@ -8,55 +8,113 @@
     <meta name="author" content="Juliana villamizar" />
     <meta name="keywords" content="tienda sementales, perfumes, feminidad, bomb sheel, angel god, tease victoria">
     <!-- imagenes tomadas de : https://instagram.com/victoriassecretcolombia?igshid=YmMyMTA2M2Y= -->
+
+    <!-- LINKS DEL CSS Y FUENTES -->
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../css/page-compra.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">     
   </head>
   <body>
 
     <!-- Barra de Navegación con links a las otras páginas -->
-    <nav class="contenedor">
-      <a href="../index.html" class="texto">Home</a>
-      <a href="catalogo.html" class="texto">Catalogo</a>
-      <a href="blog.html" class="texto">Blog</a>
-      <a href="informacion.html" class="texto">Información</a>
-      <a href="compra.html" class="texto">Compra</a>
-      <a href="contacto.html" class="texto">Contacto</a>
-    </nav>
+    <nav class="barra-navegacion background-rosa">
+      <!-- Iconos redes sociales-->
+      <div class="nav-links-izquierda">
+        <a href="https://m.facebook.com/"><img src="../img/red-social-1.png" alt="icono whatsapp"></a>
+        <a href="https://www.instagram.com"><img src="../img/red-social-2.png" alt="icono whatsapp"></a>
+        <a href="https://www.whatsapp.com/"><img src="../img/red-social-3.png" alt="icono whatsapp"></a>
+      </div>
+
+      <!-- Links de navegación -->
+      <div class="nav-links-derecha">
+        <a href="../index.html">Home.</a>
+        <a href="catalogo.html">Catalogo.</a>
+        <a href="blog.html">Blog.</a>
+        <a href="informacion.html">Información.</a>
+        <a href="compra.html" class="nav-link-activo">Compra.</a>
+        <a href="contacto.html">Contacto.</a>
+      </div>
+    </nav> 
+
+
+
 
     <!-- cabecera de la página -->
-    <header class="cabecera">
-      <h2 class="texto">Página de Compra</h2>
-      <p class="texto">
-        selecciona la cantidad de productos, ingresa tus datos de contacto y dale en el boton comprar
-      </p>
+    <header class="header contenedor">  
+
+      <!-- Columna 2 con la imagen -->
+      <div class="header-col-2">
+        <img src="../img/8.jpeg" alt="perfume" width="90%">
+      </div>        
+      <!-- Columna 1 con sistema de compras -->
+      <div class="header-col-1">
+        <!-- Texto informativo -->
+        <p class="header-parrafo-1">
+          Selecciona la cantidad de productos, ingresa tus datos de contacto y dale en el boton comprar
+        </p>
+
+        <!-- Formulario de Compra -->
+        <form>
+          <div class="form-div">
+            <!-- Selector -->
+            <label>Tipo de producto</label>
+            <select>
+              <option>Perfume Bomb Shell</option>
+              <option>Perfume Angel God</option>
+              <option>Perfume Tease Victoria</option>
+            </select>
+          </div>
+
+          <!-- Cantidad -->
+          <div class="form-div">
+            <label>Cantidad</label>
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+          </div>
+
+          <!-- Email -->
+          <div class="form-div">
+            <label>
+              Email: 
+              <input type="email" id="email" name="email" placeholder="email confirmacion" value="">
+            </label>
+          </div>
+
+          <!-- Direccion -->
+          <div class="form-div">
+            <label>
+              Dirección:
+              <input type="text" id="direccion" name="direccion" placeholder="direccion de envio" value="">
+            </label>
+          </div>
+        </form>
+
+        <p class="header-parrafo-1">
+          Escoge tu medio de pago.
+        </p>
+
+        <!-- Medios de pago -->
+        <div class="iconos-pago">
+          <a href="https://www.pse.com.co/persona"><img src="../img/pago-1.png" alt="pago1" width="200px"></a>
+          <a href="https://www.bancolombia.com/personas"><img src="../img/pago-2.png" alt="pago2" width="130px" height="130px"></a>
+          <a href="https://www.davivienda.com/"><img src="../img/pago-3.png" alt="pago3" width="200px"></a>
+        </div>
+        
+        <!-- Boton de compra -->
+        <div class="button">
+          <button onclick="alert('comprado')" type="button" name="button" class="boton-tienda-primario fuente-merriweather">Comprar</button>      
+        </div>
+      </div>
+
     </header>
 
-    <!--area de contenido-->
-    <section class="contenedor">
-      <!-- formulario de contacto -->
-      <form>
-        <div>
-          <label>Tipo de producto</label>
-          <select>
-            <option>Perfume Bomb Shell</option>
-            <option>Perfume Angel God</option>
-            <option>Perfume Tease Victoria</option>
-          </select>
-        </div>
-
-        <div>
-          <label>Cantidad</label>
-          <select>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-          </select>
-        </div>
-
-        <input type="email" id="email" name="email" placeholder="email confirmacion" value="">
-        <input type="text" id="direccion" name="direccion" placeholder="direccion de envio" value="">
-      </form>
-      <!-- boton de compra -->
-      <button onclick="alert('comprado')" type="button" name="button">Comprar</button>
-    </section>
 
   </body>
 </html>

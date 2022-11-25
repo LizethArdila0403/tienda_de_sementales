@@ -8,46 +8,63 @@
     <meta name="author" content="Juliana villamizar" />
     <meta name="author" content="Juliana villamizar" />
     <!-- imagenes tomadas de : https://instagram.com/victoriassecretcolombia?igshid=YmMyMTA2M2Y= -->
+
+    <!-- LINKS DEL CSS Y FUENTES -->
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../css/page-catalogo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">     
   </head>
   <body>
 
     <!-- Barra de Navegación con links a las otras páginas -->
-    <nav class="contenedor">
-      <a href="../index.html" class="texto">Home</a>
-      <a href="catalogo.html" class="texto">Catalogo</a>
-      <a href="blog.html" class="texto">Blog</a>
-      <a href="informacion.html" class="texto">Información</a>
-      <a href="compra.html" class="texto">Compra</a>
-      <a href="contacto.html" class="texto">Contacto</a>
-    </nav>
-
-    <!-- cabecera de la página -->
-    <header class="cabecera">
-      <h2 class="texto">Un olor que hable mas que mil palabras</h2>      
-    </header>
-
-    <!--area de contenido-->
-    <section class="contenedor">
-      <!-- Catalogo de productos en formato Carrusel -->
-      <div class="carrusel">
-        <figure>
-            <img class="imagen" src="../img/1.jpeg" alt="producto 1" width="350px">
-            <figcaption>Perfume Bomb Shell</figcaption>
-        </figure>
-        <figure>
-            <img class="imagen" src="../img/2.jpeg" alt="producto 2" width="350px">
-            <figcaption>Perfume Bomb Shell Victorias secret 2</figcaption>
-        </figure>
-        <figure>
-            <img class="imagen" src="../img/3.jpeg" alt="producto 3" width="350px">
-            <figcaption>Perfume Angel God</figcaption>
-        </figure>
-        <figure>
-            <img class="imagen" src="../img/4.jpeg" alt="producto 4" width="350px">
-            <figcaption>Perfume Tease Victoria Secret</figcaption>
-        </figure>
+    <nav class="barra-navegacion background-rosa">
+      <!-- Iconos redes sociales-->
+      <div class="nav-links-izquierda">
+        <a href="https://m.facebook.com/"><img src="../img/red-social-1.png" alt="icono whatsapp"></a>
+        <a href="https://www.instagram.com"><img src="../img/red-social-2.png" alt="icono whatsapp"></a>
+        <a href="https://www.whatsapp.com/"><img src="../img/red-social-3.png" alt="icono whatsapp"></a>
       </div>
-    </section>
+
+      <!-- Links de navegación -->
+      <div class="nav-links-derecha">
+        <a href="../index.html">Home.</a>
+        <a href="catalogo.html" class="nav-link-activo">Catalogo.</a>
+        <a href="blog.html">Blog.</a>
+        <a href="informacion.html">Información.</a>
+        <a href="compra.html">Compra.</a>
+        <a href="contacto.html">Contacto.</a>
+      </div>
+    </nav> 
+
+
+
+    <!-- Carrusel de imagenes -->
+    <header class="header contenedor">
+      
+      <!-- Producto #1 -->
+      <figure>
+          <img class="imagen" src="../img/1.jpeg" alt="producto 1" width="100%">
+          <h6>Perfume Bomb Shell</h6>
+          <a href="compra.html" class="boton-tienda-primario fuente-merriweather">¡Añadir al carro!</a>
+      </figure>
+      <!-- Producto #2 -->
+      <figure>
+          <img class="imagen" src="../img/2.jpeg" alt="producto 2" width="100%">
+          <h6>Perfume Bomb Shell Victorias secret 2</h6>
+          <a href="compra.html" class="boton-tienda-primario fuente-merriweather">¡Añadir al carro!</a>
+      </figure>
+      <!-- Producto #3 -->
+      <figure>
+          <img class="imagen" src="../img/3.jpeg" alt="producto 3" width="100%">
+          <h6>Perfume Angel God</h6>
+          <a href="compra.html" class="boton-tienda-primario fuente-merriweather">¡Añadir al carro!</a>
+      </figure>
+      
+    </header>
 
   </body>
 </html>

@@ -8,24 +8,44 @@
     <meta name="author" content="Juliana villamizar" />
     <meta name="author" content="Juliana villamizar" />
     <!-- imagenes tomadas de : https://instagram.com/victoriassecretcolombia?igshid=YmMyMTA2M2Y= -->
+
+    <!-- LINKS DEL CSS Y FUENTES -->
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../css/page-contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">     
   </head>
   <body>
 
     <!-- Barra de Navegación con links a las otras páginas -->
-    <nav class="contenedor">
-      <a href="../index.html" class="texto">Home</a>
-      <a href="catalogo.html" class="texto">Catalogo</a>
-      <a href="blog.html" class="texto">Blog</a>
-      <a href="informacion.html" class="texto">Información</a>
-      <a href="compra.html" class="texto">Compra</a>
-      <a href="contacto.html" class="texto">Contacto</a>
-    </nav>
+    <nav class="barra-navegacion background-rosa">
+      <!-- Iconos redes sociales-->
+      <div class="nav-links-izquierda">
+        <a href="https://m.facebook.com/"><img src="../img/red-social-1.png" alt="icono whatsapp"></a>
+        <a href="https://www.instagram.com"><img src="../img/red-social-2.png" alt="icono whatsapp"></a>
+        <a href="https://www.whatsapp.com/"><img src="../img/red-social-3.png" alt="icono whatsapp"></a>
+      </div>
+
+      <!-- Links de navegación -->
+      <div class="nav-links-derecha">
+        <a href="../index.html">Home.</a>
+        <a href="catalogo.html">Catalogo.</a>
+        <a href="blog.html">Blog.</a>
+        <a href="informacion.html">Información.</a>
+        <a href="compra.html">Compra.</a>
+        <a href="contacto.html" class="nav-link-activo">Contacto.</a>
+      </div>
+    </nav> 
+
 
     <!-- cabecera de la página -->
-    <header class="cabecera">
-      <h2 class="texto">Página de Contacto</h2>
-      <p class="texto">
-        ¿Quieres ser parte de la familia tienda de sementales? dejanos tus datos y nos contactaremos contigo. Te estaremos anunciando nuestras promociones y ofertas
+    <header class="header contenedor">
+      <h2 class="header-titulo">Servicio al cliente.</h2>
+      <p class="header-parrafo">
+        Use nuestro formulario de contacto para asistencia rápida y personalizada.
       </p>
     </header>
 
@@ -33,11 +53,44 @@
     <section class="contenedor">
       <!-- formulario de contacto -->
       <form>
-        <input type="text" id="nombre" name="nombre" placeholder="nombre" value="">
-        <input type="text" id="apellido" name="apellido" placeholder="apellido" value="">
-        <input type="email" id="email" name="email" placeholder="email" value="">
-        <input type="tel" id="celular" name="celular" placeholder="celular" value="">
-        <input type="submit" id="submit" value="Enviar">
+          <div style="width:50%;">
+            <!-- Textos -->
+            <div class="form-item">
+              <label>Nombre Completo</label>
+              <input type="text" id="nombre" name="nombre" placeholder="nombre" value="">        
+                                                  
+            </div>  
+
+            <div class="form-item">
+              <label>Correo Electronico</label>
+              <input type="email" id="email" name="email" placeholder="email" value="">
+            </div>
+
+            <div class="form-item">
+              <label>Telefono</label>
+              <input type="tel" id="celular" name="celular" placeholder="celular" value="">
+            </div>
+
+            <div class="form-item">
+              <label>Comentarios</label>
+              <textarea></textarea>              
+            </div>
+            
+            <!-- Inputs de entrada -->
+            <div class="form-item">        
+              <label style="visibility: hidden;">Comentarios</label>
+              <button onclick="alert('Enviado')" type="button" name="button" class="boton-tienda-primario2 fuente-merriweather">Enviar</button>      
+            </div>
+          </div>
+
+          <!-- Banner de texto e icono -->
+          <div style="text-align: center;">
+            <img class="imagen" src="../img/carta.png" alt="carta corazon" width="160px">
+            <h6>CONTACTANOS.</h6>
+            <p class="form-parrafo">
+              ¿Necesitas más ayuda? Queremos escuchar de ti.
+            </p>
+          </div>
       </form>
     </section>
 

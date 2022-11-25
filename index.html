@@ -8,38 +8,57 @@
     <meta name="author" content="Juliana villamizar" />
     <meta name="keywords" content="tienda sementales, perfumes, feminidad, bomb sheel, angel god, tease victoria">
     <!-- imagenes tomadas de : https://instagram.com/victoriassecretcolombia?igshid=YmMyMTA2M2Y= -->
+    
+    <!-- LINKS DEL CSS Y FUENTES -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/page-landing.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">     
   </head>
   <body>
 
     <!-- Barra de Navegación con links a las otras páginas -->
-    <nav class="contenedor">
-      <a href="index.html" class="texto">Home</a>
-      <a href="html/catalogo.html" class="texto">Catalogo</a>
-      <a href="html/blog.html" class="texto">Blog</a>
-      <a href="html/informacion.html" class="texto">Información</a>
-      <a href="html/compra.html" class="texto">Compra</a>
-      <a href="html/contacto.html" class="texto">Contacto</a>
+    <nav class="barra-navegacion background-rosa">
+      <!-- Iconos redes sociales-->
+      <div class="nav-links-izquierda">
+        <a href="https://m.facebook.com/"><img src="img/red-social-1.png" alt="icono whatsapp"></a>
+        <a href="https://www.instagram.com"><img src="img/red-social-2.png" alt="icono whatsapp"></a>
+        <a href="https://www.whatsapp.com/"><img src="img/red-social-3.png" alt="icono whatsapp"></a>
+      </div>
+
+      <!-- Links de navegación -->
+      <div class="nav-links-derecha">
+        <a href="index.html" class="nav-link-activo">Home.</a>
+        <a href="html/catalogo.html">Catalogo.</a>
+        <a href="html/blog.html">Blog.</a>
+        <a href="html/informacion.html">Información.</a>
+        <a href="html/compra.html">Compra.</a>
+        <a href="html/contacto.html">Contacto.</a>
+      </div>
     </nav>
 
-    <!--imagen principal-->
-    <div class="img central difuminada">
-      <img src="img/difuminada.jpeg" alt="camila cabello" width="588px">
-    </div>
 
     <!-- cabecera de la página -->
-    <header class="cabecera">
-      <h1 class="texto">¿QUIERES SER LA MEJOR VERSIÓN DE TI?</h1>
-      <p class="texto">
-        en tienda de sementales encontraras lo necesario para exaltar tu feminidad y la estrella que llevas en tu interior.
-      </p>
+    <header class="header contenedor">
+      <!-- Imagen de cabecera -->
+      <div class="header-imagenes">
+        <img src="img/difuminada.jpeg" alt="camila cabello" class="blur-img">  
+        <img src="img/difuminada.jpeg" alt="camila cabello" class="img-sobrepuesta">  
+      </div>
+      
+      <!-- Contenido de copywriting -->
+      <div class="header-texto-derecha">
+        <h1 class="header-titulo-1 fuente-merriweather">¿QUIERES SER LA MEJOR VERSIÓN DE TI?</h1>
+        <p class="header-parrafo-1 fuente-dosis"> en tienda de sementales encontraras lo necesario para exaltar tu feminidad y la estrella que llevas en tu interior. </p>  
+        <div class="header-boton">
+          <a href="html/catalogo.html" class="boton-tienda-primario fuente-merriweather" type="button" name="button">¡Conocenos!</a>  
+        </div>
+        
+      </div>
     </header>
-
-    <!--area de contenido-->
-    <section class="contenedor">
-      <p class="texto">
-        <a href="html/catalogo.html" class="texto" type="button" name="button">Conocenos</a>
-      </p>
-    </section>
 
   </body>
 </html>

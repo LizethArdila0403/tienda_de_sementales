@@ -1,0 +1,74 @@
+/* CODIGO CSS GENERAL PARA TODA LA TIENDA DE SEMENTALES */
+
+/* COLORES DE LA MARCA */
+.color-primario{ color:#F3E0DC; }
+.color-secundario{ color:#F2B6A0; }
+.color-terciario{ color:#BF7960; }
+.color-rosa{ color:#F2A0EC4D; }
+.backgruond-primario{ background:#F3E0DC; }
+.backgruond-secundario{ background:#F2B6A0; }
+.backgruond-terciario{ background:#BF7960; }
+.background-rosa{ background:#F2A0EC4D; }
+
+/* FUENTES */
+.fuente-merriweather{ font-family: 'Merriweather', serif; }
+.fuente-dosis{ font-family: 'Dosis', sans-serif; }
+
+/* CLASE CONTENEDORA */
+.contenedor{
+	width: 88%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+/* BOTON PRINCIPAL DE LA TIENDA */
+.boton-tienda-primario{
+	padding: 20px 12px;
+	border-radius: 50%;
+	color: black;
+	background: #F2B6A0;
+	border:none;	
+}
+.boton-tienda-primario:active{
+	background: #e7a790;
+}
+/* COLOR DE BACKGROUND */
+body{
+	background-image: radial-gradient(circle, #F3E0DCFF, #F3E0DC8C);
+	background-position: center;
+	background-size:100%;
+	padding-bottom: 60px;
+}
+
+/* LIMPIEZAS CSS DEL CUERPO EN GENERAL */
+html, body{
+	padding: 0;
+	margin: 0;
+	min-height:100vh;
+	height: 100%;
+	width: 100%;
+	font-size: 14px;
+}
+/* LIMPIEZAS DE ETIQUETAS DE TEXTO */
+span, p, a{
+	margin:0;
+	padding:0;
+	font-size:1rem;
+}
+/* LIMPIEZA DE LINKS */
+a{
+	text-decoration: none;
+	outline: none;
+}
+/* LIMPIEZA DE LISTAS */
+ul{
+	list-style-type: none;
+	text-decoration: none;  
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+/* LIMPIEZA DE LISTAS Y TABLAS */
+ul li, table td{
+	white-space: nowrap !important;
+}
